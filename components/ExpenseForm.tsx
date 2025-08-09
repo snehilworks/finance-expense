@@ -156,7 +156,7 @@ export default function ExpenseTracker() {
           onClick={() => setActiveView("form")}
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all duration-300 ${
             activeView === "form"
-              ? "bg-gradient-to-r from-cyan-500 to-cyan-800 text-white shadow-lg"
+              ? "bg-gradient-to-r from-cyan-500 to-emerald-900 text-white shadow-lg"
               : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
           }`}
         >
@@ -166,7 +166,7 @@ export default function ExpenseTracker() {
           onClick={() => setActiveView("records")}
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all duration-300 ${
             activeView === "records"
-              ? "bg-gradient-to-r from-blue-800 to-blue-500 text-white shadow-lg"
+              ? "bg-gradient-to-r from-purple-500 to-blue-600 text-white shadow-lg"
               : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
           }`}
         >
@@ -223,7 +223,7 @@ export default function ExpenseTracker() {
                   <Receipt className="w-4 h-4" />
                   Category
                 </label>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div className="grid grid-cols-4 gap-3">
                   {categories.map((c) => {
                     const selected = category === c.value;
                     return (
@@ -342,7 +342,7 @@ export default function ExpenseTracker() {
                 className={`relative w-full py-4 mt-6 rounded-2xl font-bold text-lg text-white shadow-xl transition-all duration-300 transform overflow-hidden group ${
                   isSubmitting
                     ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-gradient-to-r from-cyan-500 to-cyan-700 hover:from-gray-500 hover:to-blue-500 active:scale-95"
+                    : "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 active:scale-95"
                 }`}
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
