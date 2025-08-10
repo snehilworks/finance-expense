@@ -9,8 +9,6 @@ import {
   Sparkles,
   Eye,
   EyeOff,
-  Menu,
-  X,
 } from "lucide-react";
 import { loadExpenses, updateExpenses, Expense } from "../lib/storage";
 
